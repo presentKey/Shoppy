@@ -21,7 +21,6 @@ export default function NewProduct() {
     setIsUploading(true);
     uploadImage(file) //
       .then((url) => {
-        console.log(url);
         addNewProduct(product, url) //
           .then(() => {
             setSuccess('성공적으로 제품이 추가되었습니다.');
